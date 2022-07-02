@@ -1,0 +1,36 @@
+{
+  "name": "fuck-react-warning",
+  "version": "1.0.2",
+  "description": "During development, when react warns, it turns to warning",
+  "main": "./dist/cjs/main.js",
+  "module": "./dist/csm/main.js",
+  "scripts": {
+    "build": "tsc  --project ./cjs && tsc",
+    "prepublishOnly": "tsc  --project ./cjs && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WildXBird/fuck-react-warning.git"
+  },
+  "files": [
+    "index.js",
+    "/dist"
+  ],
+  "keywords": [
+    "ts"
+  ],
+  "author": "WildXBird",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/WildXBird/fuck-react-warning/issues"
+  },
+  "homepage": "https://github.com/WildXBird/fuck-react-warning#readme",
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "esbuild": "^0.14.47",
+    "typescript": "^4.7.3"
+  },
+  "dependencies": {
+    "ts-extend": "^0.1.5"
+  }
+}
