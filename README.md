@@ -1,6 +1,6 @@
 # ReactWarn2Warn
  
-During development, when react warns, it turns to real warning, not error.
+During development, when react/Vue warns, it turns to real warning, not error.
 
 ## Turn to warning
 

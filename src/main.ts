@@ -8,7 +8,9 @@ export const ReactWarn2Warn = (ignore?: boolean, topThis?: (typeof window)) => {
         ; ((native) => {
             globalThis.console.error = (...arg) => {
                 const err = arg[0]
-                if (String(err).startsWith("Warning:")) {
+                const str = String(err)
+                if (str.startsWith("Warning:")
+                    || str.startsWith("[Vue warn]")) {
                     if (!ignore) {
                         console.warn(...arg)
                     }
