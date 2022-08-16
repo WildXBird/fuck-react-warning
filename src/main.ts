@@ -1,6 +1,6 @@
 import { Jsonable } from "ts-extend"
 
-
+/** When react/Vue warns, turns to real warning, not error. */
 export const ReactWarn2Warn = (ignore?: boolean, topThis?: (typeof window)) => {
     const types: Jsonable<any> = {}
 
