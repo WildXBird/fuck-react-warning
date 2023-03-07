@@ -1,6 +1,6 @@
 {
   "name": "fuck-react-warning",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "During development, when react warns, it turns to warning",
   "main": "./dist/cjs/main.js",
   "module": "./dist/csm/main.js",

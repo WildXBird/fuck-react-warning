@@ -19,15 +19,15 @@ export const ReactWarn2Warn = (ignore?: boolean, topThis?: (typeof window)) => {
                         native(...arg)
                     } catch (error) {
                         try {
-                            console.error(error)
+                            console.error(typeof native, typeof arg, error)
                         } catch (error) {
                             try {
-                                console.warn(error)
+                                console.warn(typeof native, typeof arg, error)
                             } catch (error) {
                                 try {
-                                    console.debug(error)
+                                    console.debug(typeof native, typeof arg, error)
                                 } catch (error) {
-                                    console.log(error)
+                                    console.log(typeof native, typeof arg, error)
                                 }
                             }
                         }
